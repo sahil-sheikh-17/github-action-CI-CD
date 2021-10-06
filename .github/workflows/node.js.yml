@@ -39,9 +39,9 @@ jobs:
        if: always()
        uses: fifsky/ssh-action@master
        with:
-         host: 3.80.209.87
+         host: 52.165.20.201
          user: ubuntu
-         key: AWS_ACCESS_KEY_ID
+         pass: Pass123456789
          port: 22
          script: |
             cd ~/node-github-demo
