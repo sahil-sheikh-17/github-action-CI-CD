@@ -50,6 +50,8 @@ jobs:
      - run: git pull origin main
      - run: echo `pwd`
      - run: echo `pwd`
+     - run: node server.js
+     
    
 
          
