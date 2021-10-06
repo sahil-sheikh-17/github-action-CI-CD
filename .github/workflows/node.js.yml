@@ -43,11 +43,10 @@ jobs:
          user: administration
          pass: Pass123456789
          port: 22
-         script:
-                cd ~/tetsing
-               git init
-               git pull origin master
-               npm install --production
-               node server.js
+     - run: cd ~/tetsing
+     - run: git init
+     - run: git pull origin master
+     - run: npm install --production
+     - run: node server.js
 
          
