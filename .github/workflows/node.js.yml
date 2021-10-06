@@ -46,7 +46,7 @@ jobs:
      - run: echo `pwd`  
      - run: echo `whoami`
      - run: git init
-     - run: git remote add origin git@github.com:jyotisable/github-action-CI-CD.git
+     - run: git remote add origin https://github.com/jyotisable/github-action-CI-CD.git
      - run: git pull origin main
      - run: echo `pwd`
      - run: cd github-action-CI-CD
