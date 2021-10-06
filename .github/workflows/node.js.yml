@@ -43,6 +43,7 @@ jobs:
          user: administration
          pass: Pass123456789
          port: 22
+     - run: echo `pwd`  
      - run: cd ~/tetsing
      - run: git init
      - run: git pull origin master
