@@ -44,7 +44,7 @@ jobs:
          pass: Pass123456789
          port: 22
      - run: echo `pwd`  
-     - run: cd ~/tetsing
+     - run: echo `whoami`
      - run: git init
      - run: git pull origin master
      - run: npm install --production
