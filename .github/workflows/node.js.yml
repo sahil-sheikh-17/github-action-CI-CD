@@ -51,8 +51,5 @@ jobs:
      - run: echo `pwd`
      - run: echo `pwd`
      - run: npm install
-     - run: node server.js
      
-   
-
-         
+       
