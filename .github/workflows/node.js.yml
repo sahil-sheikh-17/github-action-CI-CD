@@ -46,7 +46,7 @@ jobs:
      - run: echo `pwd`  
      - run: echo `whoami`
      - run: git init
-     - run: git pull origin master
+     - run: git pull origin main
      - run: npm install --production
      - run: node server.js
 
