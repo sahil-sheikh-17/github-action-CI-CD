@@ -43,5 +43,10 @@ jobs:
          user: administration
          pass: Pass123456789
          port: 22
-          
+         script:
+                cd ~/tetsing
+               git pull origin master
+               npm install --production
+               pm2 restart node-app
+
          
