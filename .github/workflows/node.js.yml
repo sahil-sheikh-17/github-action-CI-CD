@@ -45,8 +45,9 @@ jobs:
          port: 22
          script:
                 cd ~/tetsing
+               git init
                git pull origin master
                npm install --production
-               pm2 restart node-app
+               node server.js
 
          
