@@ -33,7 +33,7 @@ jobs:
     - name: build and push docker image 
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: protech07
+        image: protech07/protech78
         tags: protech78,latest
         registry: docker.io
         dockerfile: Dockerfile
