@@ -47,8 +47,8 @@ jobs:
       if: always()
       uses: fifsky/ssh-action@master
       with:
-         command: |
-              docker run -P 8080:3000 -d protech07/protech78
+         command: 
+            docker run -d -p 8082:3000 --name testingcontainer protech07/protech78
               
          host: 40.71.60.39
          user: administration
