@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x,]
+        node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -26,19 +26,19 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
+    - run: npm install
     - run: npm run build --if-present
     
-      
+    
     - name: build and push docker image 
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: protech07/protech78
-        tags: protech78,latest
+        tags: v1, latest
         registry: docker.io
         dockerfile: Dockerfile
-        username: protech07
-        password: protech07@
+        username: protech07 
+        password: proplayer07@ 
         
       
 
@@ -47,9 +47,8 @@ jobs:
       if: always()
       uses: fifsky/ssh-action@master
       with:
-         command: 
-            docker run -d -p 8080:3000 --name testingcontainer protech07/protech78
-              
+         command: |
+              docker run -d -p 8082:3000 --name testingcontainer protech07/protech78 
          host: 40.71.60.39
          user: administration
          pass: Pass123456789
@@ -57,4 +56,3 @@ jobs:
    
           
       
-    
