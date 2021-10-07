@@ -33,8 +33,8 @@ jobs:
     - name: build and push docker image 
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: protech/node-web-app
-        tags: v1, latest
+        image: protech07
+        tags: protech78,latest
         registry: docker.io
         dockerfile: Dockerfile
         username: protech07
@@ -48,7 +48,7 @@ jobs:
       uses: fifsky/ssh-action@master
       with:
          command: |
-              docker run -P 8080:3000 -d protech/node-web-app
+              docker run -P 8080:3000 -d protech07/protech78
               
          host: 40.71.60.39
          user: administration
