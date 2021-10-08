@@ -35,7 +35,7 @@ jobs:
      runs-on: ubuntu-latest
 
      steps:
-     - name: deploy to comtainer
+     - name: deploy to container
        if: always()
        uses: fifsky/ssh-action@master
        with:
