@@ -49,7 +49,7 @@ jobs:
       with:
          command: 
                 docker run -d -p 8082:3000 --name testingcontainer protech07/protech78 
-         host: 40.71.60.39
+         host: 40.114.52.144
          user: administration
          pass: Pass123456789
          port: 22
