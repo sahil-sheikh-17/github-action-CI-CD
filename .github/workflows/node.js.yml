@@ -39,7 +39,7 @@ jobs:
        if: always()
        uses: fifsky/ssh-action@master
        with:
-         host: 13.90.231.145
+         host: 40.114.46.1
          user: administration
          pass: Pass123456789
          port: 22
