@@ -48,7 +48,7 @@ jobs:
       uses: fifsky/ssh-action@master
       with:
          command: 
-                docker run -d -p 8082:3000 --name testingcontainer protech07/protech78 
+                docker run -d -p 8082:3000 --name testing1container protech07/protech78 
          host: 40.114.52.144
          user: administration
          pass: Pass123456789
